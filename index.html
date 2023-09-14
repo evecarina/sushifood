@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de Comida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            /* Negro */
+            color: #fff;
+            /* Blanco */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            width: 283px;
+            background-color: #ff00ff;
+            padding: 20px;
+           
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product button {
+            background-color: #ffff00;
+            /* Amarillo */
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #ffcc00;
+            /* Amarillo más claro al pasar el mouse */
+        }
+
+        #header {
+            padding-bottom: 40px;
+            border-bottom: 1px solid #535353;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1.logo {
+            width: 140px;
+            height: 32px;
+        }
+
+        .sushi-logo {
+            background: url(http://demos.telerik.com/kendo-ui/content/spa/websushi/css/images/logo.png) 0 0 no-repeat;
+        }
+
+        .carrito-compras {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 60px;
+        }
+
+        .carrito-compras h2 {
+            margin-top: 28px;
+            margin-left: 6px;
+        }
+
+
+        #wrapper {
+            margin: 60px auto 0;
+            width: 1000px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+
+        <div id="header">
+            <div>
+                <h1 class="logo sushi-logo"></h1>
+            </div>
+
+            <div class="carrito-compras">
+                <h1 id="cart-info">Carrito de compras:</h1>
+                <h2>0</h2>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="product">
+                <img src="http://demos.telerik.com/kendo-ui/content/spa/websushi/images/200/sashimi-salad.jpg"
+                    alt="Comida 1">
+                <p>Sashimi Salad</p>
+                <p> Lonjas de pescado crudo de alta calidad, como el salmón, el atún o el pez blanco.</p>
+                <p>Precio: $10.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="http://demos.telerik.com/kendo-ui/content/spa/websushi/images/200/chirashi-sushi.jpg"
+                    alt="Comida 2">
+                <p>Shirashi Sushi</p>
+                <p>Salmón, aguacate, pepino, huevas de pescado, rábanos en rodajas</p>
+                <p>Precio: $12.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="http://demos.telerik.com/kendo-ui/content/spa/websushi/images/200/seaweed-salad.jpg"
+                    alt="Comida 1">
+                <p>Seaweed Salad </p>
+                <p>Algas Marinas, Sésamo, Vinagre de Arroz</p>
+                <p>Precio: $10.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="http://demos.telerik.com/kendo-ui/content/spa/websushi/images/200/tekka-maki.jpg"
+                    alt="Comida 2">
+                <p>Tekka Maki</p>
+                <p>Hojas de alga nori, Arroz de sushi, Atún rojo, Wasabi, Salsa de soja para mojar, Jengibre encurtido
+                </p>
+                <p>Precio: $12.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="http://demos.telerik.com/kendo-ui/content/spa/websushi/images/200/miso-soup.jpg"
+                    alt="Comida 1">
+                <p>Miso Soup</p>
+                <p>caldo de dashi, pasta de miso, tofu firme, Algas wakame secas, hongos shiitake rebanados</p>
+                <p>Precio: $10.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="http://demos.telerik.com/kendo-ui/content/spa/websushi/images/200/maguro.jpg" alt="Comida 2">
+                <p>Maguro</p>
+                <p>Salsa de Soja, Wasabi, Arroz de Sushi, Algas Nori, Sake, Atún</p>
+                <p>Precio: $12.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <!-- Repite este bloque para los otros productos -->
+        </div>
+
+    </div>
+</body>
+
+</html>
